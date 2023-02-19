@@ -18,7 +18,7 @@ nav:
   - 其它:
     - k8s learning/index.md
     - markdown编辑器快捷键: other/markdownEditor.md
-    - mkdocs安装使用: other/mkdcos.md
+    - mkdocs安装使用: other/mkdocs.md
 # [UI]
 ## [top]
 theme:
