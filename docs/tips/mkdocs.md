@@ -5,8 +5,8 @@
 
 
 参考资料：
-Material for mkdocs官方文档
+Material for mkdocs官方文档:
 https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
 
-MkDocs构建示例
+MkDocs构建示例:
 https://yang-xijie.github.io/BLOG/Markdown/mkdocs-site/
