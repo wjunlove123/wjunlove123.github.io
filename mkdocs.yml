@@ -8,7 +8,7 @@ site_description: dennis的个人网站
 nav:
   - K8S学习:
     - k8s learning/index.md
-    - k8s安装: k8s learning/index.md
+    - 容器运行时: k8s learning/container.md
   - K8S网络:
     - k8s learning/index.md
     - k8s安装: k8s learning/index.md
@@ -17,7 +17,8 @@ nav:
     - k8s安装: k8s learning/index.md
   - 其它:
     - k8s learning/index.md
-    - k8s安装: k8s learning/index.md
+    - markdown编辑器快捷键: other/markdownEditor.md
+    - mkdocs安装使用: other/mkdcos.md
 # [UI]
 ## [top]
 theme:
