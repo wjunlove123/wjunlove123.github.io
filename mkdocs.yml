@@ -7,18 +7,14 @@ site_description: dennis的个人网站
 # [Navigtion]
 nav:
   - K8S学习:
-    - k8s learning/index.md
-    - 容器运行时: k8s learning/container.md
+    - 容器运行时: k8s-learning/container.md
   - K8S网络:
-    - k8s learning/index.md
-    - k8s安装: k8s learning/index.md
+    - 网络类型: k8s-network/networkType.md
   - 工作:
-    - k8s learning/index.md
-    - k8s安装: k8s learning/index.md
+    - 网址导航: work/urlGuide.md
   - 其它:
-    - k8s learning/index.md
-    - markdown编辑器快捷键: other/markdownEditor.md
-    - mkdocs安装使用: other/mkdocs.md
+    - markdown编辑器快捷键: tips/markdownEditor.md
+    - mkdocs安装使用: tips/mkdocs.md
 # [UI]
 ## [top]
 theme:
