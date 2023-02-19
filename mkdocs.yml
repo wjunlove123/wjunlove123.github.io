@@ -7,17 +7,17 @@ site_description: dennis的个人网站
 # [Navigtion]
 nav:
   - K8S学习:
-    - LECTURE/index.md 
-    - k8s安装:
-    - 容器运行时:
-    - 控制器:
-    - 数据存储:
-    - Service详解:
-    - ingress使用:
+    - k8s learning/index.md
+    - k8s安装: k8s learning/index.md
   - K8S网络:
+    - k8s learning/index.md
+    - k8s安装: k8s learning/index.md
   - 工作:
+    - k8s learning/index.md
+    - k8s安装: k8s learning/index.md
   - 其它:
-
+    - k8s learning/index.md
+    - k8s安装: k8s learning/index.md
 # [UI]
 ## [top]
 theme:
