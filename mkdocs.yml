@@ -6,148 +6,17 @@ site_description: dennis的个人网站
 
 # [Navigtion]
 nav:
-  - 讲稿:
+  - K8S学习:
     - LECTURE/index.md 
-    - Linux:
-      - Linux讲座: LECTURE/Linux/linux.md
-      - 命令行入门精简版: LECTURE/Linux/commands-concise.md
-    - Markdown:
-      - Markdown讲座: LECTURE/Markdown/markdown.md
-      - VSCode及插件安装: LECTURE/Markdown/vscode-extension.md
-    - Git:
-      - Git: LECTURE/Git/git.md
-      - Git例子: LECTURE/Git/git-demos.md
-      - Git合作: LECTURE/Git/git-teamwork.md
-      - Windows安装Git: LECTURE/Git/windows-install.md
-    - 应用开发设计: LECTURE/App/app-design.md
-    - Flutter学习教程:
-      - LECTURE/Flutter/macos-simulator-ios.md
-      - LECTURE/Flutter/macos-simulator-android.md
-      - LECTURE/Flutter/221120-consideration.md
-    - 在macOS上用VSCode写C++代码:
-      - 0 介绍: LECTURE/vscode-cpp/0_about.md
-      - 1 前言和课程说明: LECTURE/vscode-cpp/1_前言和课程说明.md
-      - 2 认识macOS的文件系统: LECTURE/vscode-cpp/2_认识macOS的文件系统.md
-      - 3 认识程序: LECTURE/vscode-cpp/3_认识程序.md
-      - 4 认识终端和shell: LECTURE/vscode-cpp/4_认识终端和shell.md
-      - 5 开启VSCode的大门: LECTURE/vscode-cpp/5_开启VSCode的大门.md
-      - 6 VSCode代码运行自动化: LECTURE/vscode-cpp/6_VSCode代码运行自动化.md
-      - 7 用VSCode调试Cpp代码: LECTURE/vscode-cpp/7_用VSCode调试Cpp代码.md
-      - 8 课程回顾: LECTURE/vscode-cpp/8_课程回顾.md
-      - 其他: LECTURE/vscode-cpp/9_others.md
-      - 极速版: LECTURE/vscode-cpp/10_极速版.md
-      - 补充: LECTURE/vscode-cpp/11_补充.md
-    - 在macOS上用VSCode写Python: LECTURE/vscode-python/vscode-python.md
-    - 英语音标教学: LECTURE/English/phonetic-symbol.md
-  - 博客:
-    - BLOG/index.md
-    - CG:
-      - Computer Graphics: BLOG/ComputerGraphics/cg-notes.md
-      - GAMES101: BLOG/ComputerGraphics/games101.md
-      - Blender: BLOG/ComputerGraphics/blender-notes.md
-    - 游戏:
-      - Unity: BLOG/Game/unity-notes.md
-      - UE: BLOG/Game/ue-notes.md
-      - 定义: BLOG/Game/what-is-game.md
-      - 2D和3D: BLOG/Game/2d-vs-3d.md
-    - OS:
-      - TODO ExOS设计: BLOG/OS/os-design.md
-      - fork/exec/spawn: BLOG/OS/fork-exec-spawn.md
-      - fork例: BLOG/OS/fork-example.md
-    - Linux:
-      - vim: BLOG/Linux/vim.md
-      - tmux: BLOG/Linux/tmux.md
-      - UNIX: BLOG/Linux/unix.md
-      - 内核编译: BLOG/Linux/kernel-compile.md
-      - 连接树莓派: BLOG/Linux/pi-start.md
-    - macOS:
-      - 使用tree命令和访达进行任务管理: BLOG/macOS/tree.md
-      - 辅助功能缩放: BLOG/macOS/zoom.md
-      - Mac与Android的文件传输: BLOG/macOS/sharing-mac-android.md
-      - MAD制作流程: BLOG/macOS/mad.md
-      - OBS开直播: BLOG/macOS/stream.md
-    - 显示器:
-      - BLOG//Display/sony-extend.md
-    - UOS:
-      - 相关链接: BLOG/UOS/links.md
-    - Apple:
-      - iPad购买建议: BLOG/Apple/ipad-recommend.md
-      - Mac购买建议: BLOG/Apple/mac-recommend.md
-    - GitHub:
-      - 镜像到Gitee: BLOG/GitHub/mirror.md
-    - Markdown:
-      - Markdown语法初学习: BLOG/Markdown/grammars.md
-      - TODO ExMark规范: BLOG/Markdown/ExMark-spec-zh.txt
-      - MkDocs静态网站构建: BLOG/Markdown/mkdocs-site.md
-      - mdBook静态网站构建: BLOG/Markdown/mdbook-site.md
-      - GitHub Pages简介: BLOG/Markdown/github-pages.md
-      - 网络:
-        - 知识点总结: BLOG/Network/learning.md
-        - 专有名词速查: BLOG/Network/nouns.md
-        - GraphQL Hasura: BLOG/Network/graphql.md
-      - 机器学习:
-        - 动手学深度学习笔记: BLOG/Deeplearning/d2l.md
-        - 语音识别笔记: BLOG/Deeplearning/speech-recognition.md
-        - 数据加载优化: BLOG/Deeplearning/parallel-load.md
-        - DDP:
-          - DDP调研: BLOG/Deeplearning/ddp.md
-          - ddp-note.py: BLOG/Deeplearning/ddp-note.md
-    - 其他:
-      - 视频信息初探: BLOG/Others/video-info.md
-  - 开发:
-    - DEV/index.md
-    - DEV/app-dev-sum.md
-    - Flutter:
-      - Notes: DEV/Flutter/notes.md
-      - Dart linter: DEV/Flutter/dart-lint.md
-      - Template: DEV/Flutter/template.md
-      - State Management: DEV/Flutter/state-management.md
-      - Packages: DEV/Flutter/common-packages.md
-    - 编程:
-      - 推荐的学习路线: DEV/Programming/recommendation.md
-      - 我对编程语言的感受: DEV/Programming/my-feelings.md
-      - Dart:
-        - 学习笔记: DEV/Programming/Dart/learning.md
-      - Swift:
-        - 学习资源: DEV/Programming/Swift/learning-resources.md
-        - 基础语法笔记: DEV/Programming/Swift/notes-basic-grammars.md
-        - WORKING LanguageGuide笔记: DEV/Programming/Swift/notes-language-guide.md
-        - WORKING 常用标准库函数笔记: DEV/Programming/Swift/notes-useful-foundation.md
-        - 教学作业: DEV/Programming/Swift/lecture-homework.md
-        - 并行计算: DEV/Programming/Swift/parallel-for.md
-      - Python:
-        - 不喜欢Python的理由: DEV/Programming/Python/dislike.md
-        - 复制拷贝: DEV/Programming/Python/copy.md
-        - numpy速查表: DEV/Programming/Python/numpy-overview.md
-      - C:
-        - 笔记整理: DEV/Programming/C/review.md
-        - 常用函数: DEV/Programming/C/final.md
-        - stdout按行刷新: DEV/Programming/C/stdout-fflush.md
-        - 二维数组调试: DEV/Programming/C/watch-matrix.md
-      - C#:
-        - 学习笔记: DEV/Programming/Csharp/learning.md
-      - C++:
-        - 1 C++的几个基本问题: DEV/Programming/Cpp/1.md
-        - 2 函数重载: DEV/Programming/Cpp/2.md
-        - 3 类: DEV/Programming/Cpp/3.md
-        - 4 操作符重载: DEV/Programming/Cpp/4.md
-        - 5 类的继承与派生: DEV/Programming/Cpp/5.md
-        - 6 模版: DEV/Programming/Cpp/6.md
-        - 7 异常处理: DEV/Programming/Cpp/7.md
-        - 8 流类库的输入与输出: DEV/Programming/Cpp/8.md
-        - List: DEV/Programming/Cpp/list.md
-        - Stack: DEV/Programming/Cpp/stack.md
-        - 类数据成员: DEV/Programming/Cpp/class-properties.md
-        - Google风格: DEV/Programming/Cpp/google-format.md
-        - 考试复习: DEV/Programming/Cpp/final.md
-        - OJ技巧和策略: DEV/Programming/Cpp/oj.md
-      - MATLAB:
-        - MATLAB入门: DEV/Programming/MATLAB/tour.md
-        - 抛硬币的涨落问题: DEV/Programming/MATLAB/coin.md
-        - 命令行MATLAB: DEV/Programming/MATLAB/terminal-matlab.md
-    - ExNotes:
-      - ExNotes设计文档: DEV/ExNotes/design.md
-      - ExNotes开发考量: DEV/ExNotes/learning.md
+    - k8s安装:
+    - 容器运行时:
+    - 控制器:
+    - 数据存储:
+    - Service详解:
+    - ingress使用:
+  - K8S网络:
+  - 工作:
+  - 其它:
 
 # [UI]
 ## [top]
@@ -155,13 +24,13 @@ theme:
   name: material
   palette:
     - scheme: default # 日间模式
-      primary: indigo # 上方的
+      primary: light blue # 上方的
       accent: orange # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - scheme: slate # 夜间模式
-      primary: indigo
+      primary: light blue
       accent: orange
       toggle:
         icon: material/weather-sunny
