@@ -8,6 +8,9 @@ site_description: dennis的个人网站
 nav:
   - K8S学习:
     - 容器运行时: k8s-learning/container.md
+    - 为何使用K8S: k8s-learning/why-k8s.md
+    - K8S架构: k8s-learning/k8s-arch.md
+    - 核心资源对象: k8s-learning/core-resource-object.md
   - K8S网络:
     - 网络类型: k8s-network/networkType.md
   - 工作:

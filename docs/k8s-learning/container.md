@@ -29,7 +29,7 @@ CRI（Container Runtime Interface 容器运行时接口）本质上就是 Kubern
 这套标准的时候还没有现在的统治地位，所以有一些容器运行时可能不会自身就去实现 CRI 接口，于是就有了 shim（垫
 片） ， 一个 shim 的职责就是作为适配器将各种容器运行时本身的接口适配到 Kubernetes 的 CRI 接口上，其中
 dockershim 就是 Kubernetes 对接 Docker 到 CRI 接口上的一个垫片实现。
-![](2023-02-21-15-50-32.png)
+![](2023-02-21-17-27-45.png)
 从上图可以看到，CRI 主要有 gRPC client、gRPC Server 和具体的容器运行时三个组件。其中 Kubelet 作为
 gRPC 的客户端来调用 CRI 接口；CRI shim 作为 gRPC 服务端来响应 CRI 请求，负责将 CRI 请求的内容转换为具体
 的容器运行时 API，在 kubelet 和运行时之间充当翻译的角色。具体的容器创建逻辑是，Kubernetes 在通过调度指定
@@ -46,7 +46,8 @@ containerd 主要负责容器镜像的下载和解压等镜像管理功能、doc
 运行时由 Docker 公司自己维护
 如前所述，Kubernetes 在引入 CRI 之后，kubelet 需要通过 CRI shim 去调用具体的容器运行时工具，由于早期
 Kubernetes 对 Docker 的支持是内置的，因此官方自己实现了 dockershim，通过 dockershim 去访问 dockerd
-![](2023-02-21-16-06-54.png)
+![](2023-02-21-17-29-11.png)
+
 假设我们使用的是 Docker，当我们在 Kubernetes 中创建一个 Pod 的时候，首先就是 kubelet 通过 CRI 接口调用
 dockershim，请求创建一个容器，kubelet 可以视作一个简单的 CRI Client, 而 dockershim 就是接收请求的
 Server，不过他们都是在 kubelet 内置的。
@@ -57,7 +58,7 @@ Docker Daemon 后续就是 Docker 创建容器的流程了，去调用 Container
 了，Docker 太过于复杂笨重了，当然 Docker 深受欢迎的很大一个原因就是提供了很多对用户操作比较友好的功能，但是
 对于 Kubernetes 来说压根不需要这些功能，因为都是通过接口去操作容器的，所以自然也就可以将容器运行时切换到
 Containerd 
-![](2023-02-21-16-08-55.png)
+![](2023-02-21-17-30-41.png)
 
 切换到 Containerd 可以消除掉中间环节，操作体验也和以前一样，但是由于直接用容器运行时调度容器，所以它们对
 Docker 来说是不可见的。 因此，你以前用来检查这些容器的 Docker 工具就不能使用了。
