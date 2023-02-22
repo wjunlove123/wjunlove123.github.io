@@ -1,6 +1,8 @@
 ## 架构
 Kubernetes 由 Master 和 Node 两种节点组成，这两种角色分别对应着控制节点和工作节点
+
 ![](2023-02-21-22-00-50.png)
+
 其中 Master 节点由三个独立的组件组成，它们分别是负责整个集群通信的 API 服务的 kube-apiserver、负责容器
 调度的 kube-scheduler 以及负责维护集群状态的 kube-controller-manager 组件。整个集群的数据都是通过
 kube-apiserver 保存到 etcd 数据库中的，而其他所有组件的通信也都是通过 kube-apiserver 和 etcd 数据库进
@@ -25,6 +27,7 @@ API Server 为 Kubernetes 入口的设计主要有以下好处：
 
 ####kube-controller-manager
 ![](2023-02-21-22-19-56.png)
+
 Controller Manager 用于实现 Kubernetes 集群故障检测和恢复的自动化工作。主要负责执行各种控制器：
 + Replication Controller：主要是定期关联 Replication Controller (RC) 和 Pod，以保证集群中一个 RC
 (一种资源对象) 所关联的 Pod 副本数始终保持为与预设值一致

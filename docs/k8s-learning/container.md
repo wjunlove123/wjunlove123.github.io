@@ -30,6 +30,7 @@ CRI（Container Runtime Interface 容器运行时接口）本质上就是 Kubern
 片） ， 一个 shim 的职责就是作为适配器将各种容器运行时本身的接口适配到 Kubernetes 的 CRI 接口上，其中
 dockershim 就是 Kubernetes 对接 Docker 到 CRI 接口上的一个垫片实现。
 ![](2023-02-21-17-27-45.png)
+
 从上图可以看到，CRI 主要有 gRPC client、gRPC Server 和具体的容器运行时三个组件。其中 Kubelet 作为
 gRPC 的客户端来调用 CRI 接口；CRI shim 作为 gRPC 服务端来响应 CRI 请求，负责将 CRI 请求的内容转换为具体
 的容器运行时 API，在 kubelet 和运行时之间充当翻译的角色。具体的容器创建逻辑是，Kubernetes 在通过调度指定
